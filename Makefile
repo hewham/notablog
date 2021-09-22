@@ -7,3 +7,9 @@ generate: ## generate website from notion
 deploy: ## firebase deploy blog
 	@notablog generate . && \
 		firebase deploy --only hosting:anonacyblog
+
+learn: ## deploy learn
+	@cp config_learn.json config.json && \
+		notablog generate . && \
+		firebase deploy --only hosting:anonacylearn && \
+		cp config_blog.json config.json

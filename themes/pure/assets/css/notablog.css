@@ -205,6 +205,9 @@
 
 .Article {
   margin: 2rem 0;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 16px;
+  padding: 12px;
 }
 
 .Article a {
