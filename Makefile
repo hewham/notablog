@@ -4,12 +4,18 @@ help: ## Display help
 generate: ## generate website from notion
 	@notablog generate .
 
-deploy: ## firebase deploy blog
-	@notablog generate . && \
-		firebase deploy --only hosting:anonacyblog
+deploy: ## deploy everything
+	@make blog && make learn
+
+all: ## deploy everything
+	@make deploy
 
 learn: ## deploy learn
 	@cp config_learn.json config.json && \
 		notablog generate . && \
 		firebase deploy --only hosting:anonacylearn && \
 		cp config_blog.json config.json
+
+blog: ## deploy blog
+	@notablog generate . && \
+		firebase deploy --only hosting:anonacyblog
