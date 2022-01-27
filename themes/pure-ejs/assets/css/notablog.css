@@ -1,3 +1,7 @@
+body {
+  background: rgb(255, 255, 255);
+}
+
 /* Navbar */
 
 .Navbar {
@@ -40,6 +44,10 @@
 
 .Navbar__Btn:hover {
   background: rgba(55, 53, 47, 0.08);
+}
+
+.Navbar__Btn:active {
+  background: rgba(55, 53, 47, 0.16);
 }
 
 .Navbar__Btn > span {
@@ -227,6 +235,10 @@
 .Article__Title > a {
   margin-left: 5px;
   border-bottom: 2px solid hsl(45, 8%, 85%);
+}
+
+.Article__Title > a:not(:first-child) {
+  margin-left: 5px;
 }
 
 .Article__Title > a:hover {

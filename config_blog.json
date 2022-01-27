@@ -1,5 +1,6 @@
 {
   "url": "https://www.notion.so/49910017233a45929cd6638c31cd54d4?v=efb9e63c43134d038bd9b473b39aa70f",
-  "theme": "pure",
-  "previewBrowser": "~/Applications/Microsoft Edge.app"
+  "theme": "pure-ejs",
+  "previewBrowser": "~/Applications/Safari.app",
+  "autoSlug": true
 }
